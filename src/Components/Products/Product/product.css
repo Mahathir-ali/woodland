@@ -1,0 +1,25 @@
+.pd_card {
+  width: 300px;
+  cursor: pointer;
+}
+.pd_card img {
+  width: 100%;
+}
+.pd_card .pd_card-details {
+  text-align: center;
+}
+.pd_card-details h6 {
+  font-size: 20px;
+}
+
+.pd_card:hover {
+  color: #a6c76c;
+}
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
+  font-size: 12px !important;
+}

@@ -1,0 +1,74 @@
+.deal-bg {
+  background: #edf3f6;
+  margin-top: 100px;
+  /* height: 500px; */
+}
+
+.deal_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+/* .deal-img {
+    height: 300px;
+  } */
+
+.deal_card {
+  width: 50%;
+}
+
+.chair-img {
+  background: #fff;
+}
+
+.chair-card {
+  margin-left: 450px;
+  width: 50%;
+  border: none;
+  outline: none;
+}
+
+.bedCover-card {
+  width: 37%;
+  margin-left: 20px;
+}
+
+.chair_text {
+  color: #000;
+  text-align: center;
+}
+
+.bed_sheet {
+  padding: 50px;
+}
+
+.chair_text button {
+  border: none;
+  background: transparent;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 550px) {
+  .deal_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chair-card {
+    margin-left: 0;
+  }
+  .chair_text h2 {
+    text-align: start;
+    font-size: 0.7rem;
+  }
+  .deal_card {
+    width: 100%;
+  }
+  .bed_sheet {
+    padding: 0%;
+    padding-top: 50px;
+  }
+  .bedCover-card {
+    margin-left: 0%;
+  }
+}

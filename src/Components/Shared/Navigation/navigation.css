@@ -1,0 +1,16 @@
+#nav_links a {
+  font-size: 1.05rem;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: 600;
+  color: black;
+}
+
+.fa-sign-out-alt {
+  color: #fff;
+  margin-left: 5px;
+}
+.fa-sign-in-alt {
+  color: #fff;
+  margin-left: 5px;
+}

@@ -1,0 +1,29 @@
+.support_container {
+  background-color: rgba(245, 222, 179, 0.507);
+  margin-top: 100px;
+}
+
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 30px;
+}
+.support_type {
+  display: flex;
+  gap: 10px;
+}
+
+.support_type h6 {
+  font-size: 18px;
+}
+.support_type small {
+  opacity: 0.7;
+  font-size: 11px;
+}
+
+.icon {
+  font-size: 22px;
+  margin-top: 20px;
+}

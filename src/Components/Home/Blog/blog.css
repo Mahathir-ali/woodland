@@ -1,0 +1,30 @@
+.blog_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.blog-title {
+  text-align: center;
+  padding: 50px;
+}
+
+.blog_details {
+  text-align: center;
+}
+
+.blog_details p {
+  opacity: 0.5;
+}
+
+.blog_details button {
+  background: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 550px) {
+  .blog_container {
+    flex-direction: column;
+  }
+}
