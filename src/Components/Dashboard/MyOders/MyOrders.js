@@ -16,13 +16,15 @@ const MyOrders = () => {
   const [control, setControl] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?email=${user.email}`)
+    fetch(
+      `https://mighty-chamber-62997.herokuapp.com/orders?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, [control, user.email]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/orders/${id}`, {
+    fetch(`https://mighty-chamber-62997.herokuapp.com/orders/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

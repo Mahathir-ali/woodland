@@ -6,7 +6,7 @@ import TopProducts from "./TopProducts/TopProducts";
 const AllProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/allProduct`)
+    fetch(`https://mighty-chamber-62997.herokuapp.com/allProduct`)
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);

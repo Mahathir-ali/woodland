@@ -17,7 +17,7 @@ const Details = () => {
   const onSubmit = (data) => {
     data.status = "Pending";
     console.log(data);
-    fetch("http://localhost:5000/orders", {
+    fetch("https://mighty-chamber-62997.herokuapp.com/orders", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
@@ -32,7 +32,7 @@ const Details = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/singleProduct/${id}`)
+    fetch(`https://mighty-chamber-62997.herokuapp.com/singleProduct/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, [id]);

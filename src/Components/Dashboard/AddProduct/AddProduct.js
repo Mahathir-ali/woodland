@@ -15,7 +15,7 @@ const AddProduct = () => {
   const handleAddProduct = (e) => {
     const products = { ...addProduct };
     // console.log(products);
-    fetch("http://localhost:5000/products", {
+    fetch("https://mighty-chamber-62997.herokuapp.com/products", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(products),

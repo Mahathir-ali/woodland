@@ -15,7 +15,7 @@ const ManageAllOrders = () => {
   const [control, setControl] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/allOrders`)
+    fetch(`https://mighty-chamber-62997.herokuapp.com/allOrders`)
       .then((res) => res.json())
       .then((data) => setAllOrder(data));
   }, [control]);
@@ -25,7 +25,7 @@ const ManageAllOrders = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/orders/${id}`, {
+    fetch(`https://mighty-chamber-62997.herokuapp.com/orders/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -39,7 +39,7 @@ const ManageAllOrders = () => {
   };
 
   const handleUpdate = (orderId) => {
-    fetch(`http://localhost:5000/statusUpdate/${orderId}`, {
+    fetch(`https://mighty-chamber-62997.herokuapp.com/${orderId}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ status }),
